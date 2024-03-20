@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="A small Website about myself">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://adechamps.net/">
     <meta property="og:type" content="website">
@@ -54,36 +54,123 @@
     </div>
 </header>
 <div class="pusher">
-    <h1>Website under construction</h1>
-    <div class="ui inverted vertical footer segment">
-        <div class="ui container">
-            <div class="ui stackable inverted divided equal height stackable grid">
-                <div class="three wide column">
-                    <h3 class="ui inverted header">Contact</h3>
-                    <div class="ui inverted link list">
-                        <a class="item" href="mailto:contact@adechamps.net">E-Mail</a>
-                        <a class="item" href="https://matrix.to/#/@altf4arnold:matrix.org">Matrix</a>
-                        <a class="item" href="https://gitlab.com/altf4arnold.gpg">GPG key : 74E41C89</a>
-                    </div>
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <div class="eight wide column">
+                    <h2 class="ui header">Article on RIPE Labs</h2>
+                    <p>At some point, when I started moving the Reverse DNS's of Squirrelco(HSBXL), I started thinking
+                        about ways that reverse-DNS in that implementation could break. I also started to worry about
+                        the DNSSEC implementation of it. That turned into a rabbit hole and me writing an article that
+                        got published on RIPE Labs</p>
                 </div>
-                <div class="three wide column">
-                    <h3 class="ui inverted header">Interesting links</h3>
-                    <div class="ui inverted link list">
-                        <a class="item"
-                           href="https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?nummer=0802.702.615">Company
-                            Info BE0802.702.615</a>
-                        <a class="item" href="https://github.com/altf4arnold">GitHub</a>
-                        <a class="item" href="https://gitlab.com/altf4arnold">GitLab</a>
-                    </div>
+                <div class="six wide right floated column">
+                    <a href="https://labs.ripe.net/author/altf4arnold/the-state-of-reverse-dns/"
+                       class="ui medium image">
+                        <button class="ui button">
+                            <img src="https://labs.ripe.net/images/KzYUJaOJ3_Fw3M0VNdwbhCOG-mk=/8527/fill-450x450-c100/iStock-1479678749.jpg">
+                        </button>
+                    </a>
                 </div>
-                <div class="seven wide column">
-                    <h3 class="ui inverted header">Website information</h3>
-                    <p>This website is built with ❤️ by myself and under GPLv3 on <a
-                            href="https://github.com/altf4arnold/altf4arnold.github.io">GitHub</a></p>
+            </div>
+            <div class="row">
+                <div class="six wide column">
+                    <a href="https://skyscreen.aero"
+                       class="ui medium image">
+                        <button class="ui button">
+                            <img src="https://skyscreen.aero/static/images/skyscreen-icon-only-white.png">
+                        </button>
+                    </a>
+                </div>
+                <div class="eight wide right floated column">
+                    <h2 class="ui header">Skyscreen.aero</h2>
+                    <p>Skyscreen.aero is a project that I started after trying to find historical information about
+                        airplanes. I noticed that some data was public but not yet easy to access. I started this
+                        project as a way to put everything in one place and making API's that could be use to make them
+                        all researchable. In the end, I hope I will even be able to do some statistics about the parts
+                        of the data that I find interesting. This is a permanent work in progress.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="eight wide column">
+                    <h2 class="ui header">Squirrelco</h2>
+                    <p>Squirrelco is the name of the ISP of HSBXL. Until now, we had to make a lot of hacks to make our
+                        internet work with IPv6 and VOIP (turns out, VOIP doesn't like recursive NATv4). At this point,
+                        we took our own IPv6 blocks and ASN and will start announcing it soon on the public internet.
+                        This will also be a permanent work in progress. But at least our name is on the speedtest
+                        :-)</p>
+                </div>
+                <div class="six wide right floated column">
+                    <a href="https://squirrelco.net"
+                       class="ui medium image">
+                        <button class="ui button">
+                            <img src="https://squirrelco.net/squirrel-white.png">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six wide column">
+                    <a href="https://fosdem.org"
+                       class="ui medium image">
+                        <button class="ui button">
+                            <img src="https://fosdem.org/2024/assets/style/bg-visual-panel-73f1975ffc7435da092f7de492966249bd09606d7e9d6241cc31591203c5a2d6.png">
+                        </button>
+                    </a>
+                </div>
+                <div class="eight wide right floated column">
+                    <h2 class="ui header">Fosdem Network Team</h2>
+                    <p>I started helping the FOSDEM rolling out cables before the entire covid situation. With the time,
+                        I've ended up sympathising with them and ended up in the NOC team. Now, I will be able to help,
+                        plan and roll out the network logic in addition to the cables.
+                    </p>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <h2 class="ui header">Github</h2>
+                <p>I have a lot of stuff there. It goes from sometimes making a contribution on a packet manager,
+                    sometimes fixing a bug on someone else's project, sometimes working on skyscreen to making silly
+                    projects like a departure screen for airports.</p>
+            </div>
+            <div class="six wide right floated column">
+                <a href="https://github.com/altf4arnold"
+                   class="ui medium image">
+                    <button class="ui button">
+                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png">
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h3 class="ui inverted header">Contact</h3>
+                        <div class="ui inverted link list">
+                            <a class="item" href="mailto:contact@adechamps.net">E-Mail</a>
+                            <a class="item" href="https://matrix.to/#/@altf4arnold:matrix.org">Matrix</a>
+                            <a class="item" href="https://gitlab.com/altf4arnold.gpg">GPG key : 74E41C89</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h3 class="ui inverted header">Interesting links</h3>
+                        <div class="ui inverted link list">
+                            <a class="item"
+                               href="https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?nummer=0802.702.615">Company
+                                Info BE0802.702.615</a>
+                            <a class="item" href="https://github.com/altf4arnold">GitHub</a>
+                            <a class="item" href="https://gitlab.com/altf4arnold">GitLab</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h3 class="ui inverted header">Website information</h3>
+                        <p>This website is built with ❤️ by myself and under GPLv3 on <a
+                                href="https://github.com/altf4arnold/altf4arnold.github.io">GitHub</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>
