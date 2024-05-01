@@ -53,10 +53,13 @@
             <div class="row">
                 <div class="eight wide column">
                     <h2 class="ui header">Article on RIPE Labs</h2>
-                    <p>At some point, when I started moving the Reverse DNS's of Squirrelco(HSBXL), I started thinking
-                        about ways that reverse-DNS in that implementation could break. I also started to worry about
-                        the DNSSEC implementation of it. That turned into a rabbit hole and me writing an article that
-                        got published on RIPE Labs</p>
+                    <p>At some point, when I started moving the Reverse DNS's of <a href="https://squirrelco.net/"
+                                                                                    alt="The HSBXL ISP">Squirrelco(HSBXL)</a>,
+                        I started thinking
+                        about the ways it has been implemented and started worying about the state of the infrastructure
+                        in the long run. I also started to ask questions about DNSSEC on all the reverse Zones. Thit
+                        turned into a rabbit hole and me writing an article that got published on RIPE Labs (The
+                        European RIR)</p>
                 </div>
                 <div class="six wide right floated column">
                     <a href="https://labs.ripe.net/author/altf4arnold/the-state-of-reverse-dns/"
@@ -80,9 +83,9 @@
                     <h2 class="ui header">Skyscreen.aero</h2>
                     <p>Skyscreen.aero is a project that I started after trying to find historical information about
                         airplanes. I noticed that some data was public but not yet easy to access. I started this
-                        project as a way to put everything in one place and making API's that could be use to make them
-                        all researchable. In the end, I hope I will even be able to do some statistics about the parts
-                        of the data that I find interesting. This is a permanent work in progress.
+                        project as a way to put everything in one place and making API's that could be used to make them
+                        all researchable. In the end, I hope I will even be able to do some data analytics and research.
+                        This is a permanent work in progress.
                     </p>
                 </div>
             </div>
@@ -90,8 +93,8 @@
                 <div class="eight wide column">
                     <h2 class="ui header">Squirrelco</h2>
                     <p>Squirrelco is the name of the ISP of HSBXL. Until now, we had to make a lot of hacks to make our
-                        internet work with IPv6 and VOIP (turns out, VOIP doesn't like recursive NATv4). At this point,
-                        we took our own IPv6 blocks and ASN and will start announcing it soon on the public internet.
+                        internet work in decent conditions. This escalated to us getting our own IPv6 blocks and ASN and
+                        we will start announcing it soon on the public internet.
                         This will also be a permanent work in progress. But at least our name is on the speedtest
                         :-)</p>
                 </div>
@@ -114,18 +117,21 @@
                     </a>
                 </div>
                 <div class="eight wide right floated column">
-                    <h2 class="ui header">Fosdem Network Team</h2>
-                    <p>I started helping the FOSDEM rolling out cables before the entire covid situation. With the time,
-                        I've ended up sympathising with them and ended up in the NOC team. Now, I will be able to help,
+                    <h2 class="ui header">Fosdem Core Network Team</h2>
+                    <p>I started helping the FOSDEM rolling out cables in 2018. With the time,
+                        I've ended up sympathising with them and ended up in the core NOC team. Now, I will be able to
+                        help,
                         plan and roll out the network logic in addition to the cables.
                     </p>
                 </div>
             </div>
             <div class="eight wide column">
                 <h2 class="ui header">Github</h2>
-                <p>I have a lot of stuff there. It goes from sometimes making a contribution on a packet manager,
+                <p>I have a lot of stuff there. It goes from sometimes making a contribution on a packet manager (<a
+                        href="https://brew.sh" alt="Homebrew URL">homebrew</a>),
                     sometimes fixing a bug on someone else's project, sometimes working on skyscreen to making silly
-                    projects like a departure screen for airports.</p>
+                    projects like a <a href="https://github.com/altf4arnold/flight-screen-info"
+                                       alt="flight departure screen">departure screen for airports.</a></p>
             </div>
             <div class="six wide right floated column">
                 <a href="https://github.com/altf4arnold"
@@ -146,10 +152,31 @@
                 </div>
                 <div class="eight wide right floated column">
                     <h2 class="ui header">TLDtest</h2>
-                    <p>This project got created after I started digging about DNS. Turns out that not all TLD are as
-                        redundant or secure as any other. This work in progress has for target to highlight those
-                        differences and explain them.</p>
+                    <p>This project got created after I started digging about DNS. Turns out that not all TLD's are
+                        built equal. Some have better redundancy, some better accessibility and some are just so bad I
+                        won't ever buy a domain from them in their current infrastructure state. This work in progress
+                        has for target to highlight those differences and explain them.</p>
                 </div>
+            </div>
+            <div class="eight wide column">
+                <h2 class="ui header">Tiguinet</h2>
+                <p>This was my first personnal ISP. ASN35395. I had my own IPv4 /22 and a /29 IPv6. I learned a lot from
+                    it. The technical side was very interesting. The project is now dead. The lesson we took out of it
+                    (me and the people that participated) was that having a strong technical side is VERY important, but
+                    neglecting the Business/Management side will eventually kill a network, even if the technical stack
+                    is operational. Nice experience overall. The website got archived <a href="https://tiguinet.net"
+                                                                                         alt="Tiguinet's Website">here</a>
+                    and the domain still hosts a arch linux, MX linux and OpenWRT <a href="https://mirror.tiguinet.net"
+                                                                                     alt="Tiguinet's mirror">mirror</a>
+                    (depending on the distro, it's the only one in Belgium)</p>
+            </div>
+            <div class="six wide right floated column">
+                <a href="https://tiguinet.net"
+                   class="ui medium image">
+                    <button class="ui button">
+                        <img src="https://tiguinet.net/media/logo-full.png">
+                    </button>
+                </a>
             </div>
         </div>
         <div class="ui inverted vertical footer segment">
