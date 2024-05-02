@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>DNS</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css">
+    <link rel="stylesheet" href="weathermark.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="watermark">
+    <a href="https://urlab.be" rel="noopener noreferrer">
+        <img
+                src="Urlab.png"
+        />
+    </a>
+</div>
+<div class="reveal">
+    <div class="slides">
+        <section><h1>Comment faire du DNS solide</h1>
+            <p>Coucou Facebook...</p></section>
+        <section data-markdown><textarea data-template>
+            ## Qu'est ce qu'un nom de domaine ?
+            * Un espace textuel consistant de 2 (ou plus) segments séparés par des . Comme icann.org
+            * Si vous avez un domaine, vous pouvez y créer plusieurs types de champs (MX, A, AAAA, TXT, ...)
+            * Vous pouvez créer les sous-domaines que vous voullez (that.s.a.cool.domainb.ro)
+            * le système DNS est maintenu par l'ICANN qui délègue le controle de ses TLD.
+            * Vous ne POSSÉDEZ pas un domaine
+        </textarea></section>
+        <section data-markdown><textarea data-template>
+            ## Comment marche DNS ?
+            ![DNS](route53-dns.png)
+        </textarea></section>
+        <section data-markdown><textarea data-template>
+            ![DNS](root-dns.png)
+        </textarea></section>
+        <section><h3>Contexte : </h3>
+            <p>Panne de Facebook 04/10/2021-17:39 CEST</p><br><a
+                    href="https://fr.wikipedia.org/wiki/Panne_de_Facebook_(2021)">Lien Wikipedia vers l'histoire</a>
+        </section>
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
+</html>
