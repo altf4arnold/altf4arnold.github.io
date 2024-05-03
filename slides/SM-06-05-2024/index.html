@@ -52,6 +52,14 @@
             <img src="tldtest.png">
         </section>
         <section>
+            <p>.im</p>
+            <img src="im.png">
+        </section>
+        <section>
+            <p>.net</p>
+            <img src="net.png">
+        </section>
+        <section>
             <p>Registrar - How to run a domain registrar @ MCH2022 by Q Misell</p>
             <iframe width="1024" height="576"
                     src="https://media.ccc.de/v/mch2022-289-running-a-domain-registrar-for-fun-and-some-profit/oembed"
@@ -61,9 +69,49 @@
             <h3>urlab.be</h3>
             <img src="urlab.png">
         </section>
+        <section>
+            <h3>DNS Barbecue colorized:</h3>
+            <img src="incendie-ovh-1.jpg" height="600">
+        </section>
         <section><h3>Contexte : </h3>
             <p>Panne de Facebook 04/10/2021-17:39 CEST</p><br><a
                     href="https://fr.wikipedia.org/wiki/Panne_de_Facebook_(2021)">Lien Wikipedia vers l'histoire</a>
+        </section>
+        <section>
+            <h3>Fonctionnement de DNS</h3>
+            <img src="dns_master_slave.jpg" height="400">
+        </section>
+        <section>
+            <pre><code data-trim data-noescape>$TTL	86400
+$ORIGIN af4.be.
+@			IN	SOA	ns1.adechamps.net.  hostmaster.adechamps.net. (
+					2024021008	; Serial
+					604800		; Refresh
+					86400		; Retry
+					2419200		; Expire
+					86400 )	; Negative Cache TTL
+			IN	NS	ns1.he.net.
+			IN	NS	pns51.cloudns.net.
+			IN	MX 10	spool.mail.gandi.net.
+			IN	MX 20	fb.mail.gandi.net.
+darkstar		IN	A	37.27.3.196
+			IN	AAAA	2a01:4f9:c012:4921::1
+matrix			IN	A	37.27.3.196
+			IN	AAAA	2a01:4f9:c012:4921::1
+_matrix._tcp.matrix	IN	SRV	0 0 8448 matrix
+            </code>
+            </pre>
+        </section>
+        <section data-markdown><textarea data-template>
+            Extra doc ?
+            * [managing DNS using git](https://labs.ripe.net/author/ondrej_caletka/managing-dns-zones-using-git/)
+            * [State of Reverse DNS](https://labs.ripe.net/author/altf4arnold/the-state-of-reverse-dns/)
+            * [Q Misell Registrar talk](https://media.ccc.de/v/mch2022-289-running-a-domain-registrar-for-fun-and-some-profit)
+            * [tldtest.net](https://tldtest.net)
+            * [RDAP.org](https://deployment.rdap.org/)
+        </textarea></section>
+        <section>
+            <h1>Questions ?</h1>
         </section>
     </div>
 </div>
