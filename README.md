@@ -1,3 +1,3 @@
 # New Website \o/
 
-Based on Semantic-UI
+Raw HTML. 
